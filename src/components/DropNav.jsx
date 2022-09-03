@@ -3,7 +3,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 import { useState } from 'react';
-const Dropdown = ({ items, isSub = false }) => {
+const DropNav = ({ items, isSub = false, drawer_style }) => {
     const [open, setOpen] = useState(false)
     const handleExpand = () => {
         setOpen(!open)
@@ -17,7 +17,7 @@ const Dropdown = ({ items, isSub = false }) => {
                     <Box key={index}>
                         <ListItem sx={{ padding: 0 }}>
                             <ListItemButton component={Link} to={el.url}>
-                                <ListItemText sx={{ ...el.style }} disableTypography>{el.name}</ListItemText>
+                                <ListItemText sx={{ ...el.style ? el.style : drawer_style }} disableTypography>{el.name}</ListItemText>
                             </ListItemButton>
                             {
                                 (el.sub_items === []) ?
@@ -36,7 +36,7 @@ const Dropdown = ({ items, isSub = false }) => {
                         {
                             el.sub_items ?
                                 (<Collapse in={open}>
-                                    <Dropdown items={el.sub_items} isSub={true} />
+                                    <DropNav items={el.sub_items} isSub={true} />
                                 </Collapse>) :
                                 (<></>)
                         }
@@ -48,4 +48,4 @@ const Dropdown = ({ items, isSub = false }) => {
     )
 }
 
-export default Dropdown
+export default DropNav

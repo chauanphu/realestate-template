@@ -62,7 +62,30 @@ for (let i = 1; i <= 6; i++) {
     var model = require('../assets/models/' + i + '.jpg')
     models.push(model)
 }
-
+const tabs = [
+    {
+        name: 'Giới thiệu', url: '#introduction'
+    },
+    {
+        name: 'Vị trí', url: '#location'
+    }, {
+        name: 'Tiện ích', url: '#benefit'
+    },
+    {
+        name: 'Mặt bằng', url: '#area'
+    },
+    {
+        name: 'Thanh toán', url: '#payment'
+    }, {
+        name: 'Hình ảnh thực tế', url: '#real-img'
+    },
+    {
+        name: 'Nhà mẫu', url: '#model'
+    },
+    {
+        name: 'Liên hệ', url: '#footer'
+    },
+]
 const ZaloIcon = (props) => {
     return (
         <SvgIcon {...props}>
@@ -79,7 +102,7 @@ const HomePage = () => {
     return (
         <>
             {/* Navbar */}
-            <Navbar></Navbar>
+            <Navbar tabs={tabs}></Navbar>
 
             {/* Panel */}
             <Panel panel={panel} />
