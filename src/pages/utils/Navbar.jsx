@@ -9,7 +9,7 @@ import logo from 'assets/logo-extended.png'
 //Import State
 import DropNav from 'components/DropNav';
 
-const Navbar = ({
+function Navbar({
     pc_style = {
         fontSize: '1.2em',
         color: 'green',
@@ -19,7 +19,7 @@ const Navbar = ({
         color: 'green',
         py: 0.5,
     }, tabs = [] },
-) => {
+) {
 
     const [drawer, setDrawer] = useState(false)
     const theme = useTheme();
