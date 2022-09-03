@@ -8,7 +8,7 @@ import {
 } from "@mui/material/colors"
 
 
-import Form from './Form';
+import Form from '../../components/Form';
 
 const Footer = () => {
     const ZaloIcon = (props) => {

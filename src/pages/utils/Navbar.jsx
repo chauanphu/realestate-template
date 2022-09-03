@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo-extended.png'
 
 //Import State
-import Dropdown from './Dropdown';
+import Dropdown from '../../components/Dropdown';
 
 const Navbar = () => {
     const [tabvalue, setTab] = useState('1');

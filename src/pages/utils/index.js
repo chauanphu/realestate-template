@@ -3,4 +3,5 @@ export { default as IntroTable } from './IntroTable'
 export { default as ImgContent } from './ImgContent'
 export { default as CarouselContent } from './CarouselContent'
 export { default as ImgGrid } from './ImgGrid'
-
+export { default as Navbar } from './Navbar'
+export { default as Footer } from './Footer'

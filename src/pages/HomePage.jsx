@@ -6,7 +6,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { Typography, Fab, SvgIcon } from '@mui/material'
 import { MyModal } from '../components'
 import { red } from '@mui/material/colors';
-import { Navbar, Footer } from "../components";
+import { Navbar, Footer } from "./utils";
 
 /////// Custom Sections ///////
 import { Panel, IntroTable, ImgContent, CarouselContent, ImgGrid } from './utils';
