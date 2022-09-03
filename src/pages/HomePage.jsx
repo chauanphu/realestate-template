@@ -2,15 +2,13 @@ import React from 'react'
 import { Box } from '@mui/system'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
 import { Typography, SvgIcon } from '@mui/material'
-import { MyModal } from 'components'
 import { red, blue } from '@mui/material/colors';
-import { Navbar, Footer } from "./utils";
 
 /////// Custom Sections ///////
 import { Panel, IntroTable, ImgContent, CarouselContent, ImgGrid } from './utils';
-import { FabContainer, FabPhone, FabLink } from 'components/Fab';
+import { FabContainer, FabPhone, FabLink, } from 'components/Fab';
+import { Modal, Navbar, Footer } from 'components'
 ///////////////////////////////
 
 /////// Images ///////
@@ -20,6 +18,7 @@ import mat_bang_3 from 'assets/Mat_Bang_3.JPG'
 import payment from 'assets/payment.jpg'
 //////////////////////
 
+/////// Variables ///////
 const introduction = [
     { key: 'Tên dự án', value: 'MT EASTMARKCITY', value_style: { fontWeight: 'bold', color: red[500] } },
     { key: "Vị trí", value: "Vành đai 3 – Lò Lu, P. Long Trường, TP Thủ Đức, TP HCM" },
@@ -92,6 +91,7 @@ const ZaloIcon = () => {
         </SvgIcon>
     );
 }
+//////////////////////
 
 const HomePage = () => {
 
@@ -205,7 +205,7 @@ const HomePage = () => {
 
             <Footer />
 
-            <MyModal />
+            <Modal />
             {/* FAB */}
             <FabContainer>
                 <FabPhone phone_number="0909049996"></FabPhone>

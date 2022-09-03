@@ -11,6 +11,10 @@ const SERVICE_ID = "service_uq2oteh"
 const TEMPLATE_ID = "template_5uj1vsq"
 const PUBLIC_KEY = 'jLgP61qPVm5XZ6mpz'
 
+/**
+ * This Form Template use EmailJS API
+ * @returns 
+ */
 const Form = () => {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
