@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { Typography, Fab, SvgIcon } from '@mui/material'
-import { MyModal } from '../components'
+import { MyModal } from 'components'
 import { red } from '@mui/material/colors';
 import { Navbar, Footer } from "./utils";
 
@@ -13,10 +13,10 @@ import { Panel, IntroTable, ImgContent, CarouselContent, ImgGrid } from './utils
 ///////////////////////////////
 
 /////// Images ///////
-import panel from '../assets/Panel.png'
-import mat_bang from '../assets/Mat_Bang.png'
-import mat_bang_3 from '../assets/Mat_Bang_3.JPG'
-import payment from '../assets/payment.jpg'
+import panel from 'assets/Panel.png'
+import mat_bang from 'assets/Mat_Bang.png'
+import mat_bang_3 from 'assets/Mat_Bang_3.JPG'
+import payment from 'assets/payment.jpg'
 //////////////////////
 
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';

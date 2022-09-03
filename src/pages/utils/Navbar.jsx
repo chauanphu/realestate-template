@@ -4,7 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { AppBar, Toolbar, Tabs, Tab, Box, IconButton, Drawer } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../assets/logo-extended.png'
+import logo from '../../assets/logo-extended.png'
 
 //Import State
 import Dropdown from '../../components/Dropdown';
